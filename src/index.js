@@ -4,6 +4,9 @@ import './style.scss';
 import Router from './util/Router';
 import common from './routes/common';
 import home from './routes/home';
+import navigation from './navigation';
+
+navigation()
 
 /**
  * Populate Router instance with DOM routes

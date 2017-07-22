@@ -1,2 +1,10 @@
-@import "styles/global-vars";
-@import "styles/base";
+
+// Override variables here
+@import "styles/config";
+
+@import "../node_modules/bulma/bulma";
+
+// Import Bulmapress
+@import "styles/settings/all";
+@import "styles/elements/all";
+@import "styles/components/all";

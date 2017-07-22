@@ -710,10 +710,6 @@ better-assert@~1.0.0:
   dependencies:
     callsite "1.0.0"
 
-bf-solid@^2.6.2:
-  version "2.6.2"
-  resolved "https://registry.yarnpkg.com/bf-solid/-/bf-solid-2.6.2.tgz#8b2f266b94fb16f341037df9587010af9eb5c585"
-
 big.js@^3.1.3:
   version "3.1.3"
   resolved "https://registry.yarnpkg.com/big.js/-/big.js-3.1.3.tgz#4cada2193652eb3ca9ec8e55c9015669c9806978"
@@ -920,6 +916,10 @@ builtin-modules@^1.0.0:
 builtin-status-codes@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/builtin-status-codes/-/builtin-status-codes-3.0.0.tgz#85982878e21b98e1c66425e03d0174788f569ee8"
+
+bulma@^0.4.3:
+  version "0.4.3"
+  resolved "https://registry.yarnpkg.com/bulma/-/bulma-0.4.3.tgz#060da634b579ed99d7cedf0251d9e21e1f5c770d"
 
 callsite@1.0.0:
   version "1.0.0"
@@ -2771,6 +2771,10 @@ normalize-range@^0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/normalize-range/-/normalize-range-0.1.2.tgz#2d10c06bdfd312ea9777695a4d28439456b75942"
 
+normalize-scss@>=5.0.4, normalize-scss@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/normalize-scss/-/normalize-scss-7.0.0.tgz#92eaac6554cc376336c06682a0d6a2099bbb0889"
+
 normalize-url@^1.4.0:
   version "1.9.1"
   resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-1.9.1.tgz#2cc0d66b31ea23036458436e3620d85954c66c3c"
@@ -3687,6 +3691,12 @@ shallow-clone@^0.1.2:
 signal-exit@^3.0.0:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
+
+skeleton-sass-official@^3.1.4:
+  version "3.1.4"
+  resolved "https://registry.yarnpkg.com/skeleton-sass-official/-/skeleton-sass-official-3.1.4.tgz#a4dd0abae5383f15eac02cbbf73d397f493e050e"
+  dependencies:
+    normalize-scss ">=5.0.4"
 
 slash@^1.0.0:
   version "1.0.0"

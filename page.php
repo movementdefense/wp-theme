@@ -1,39 +1,27 @@
-<?php get_header(); ?>
+<?php
+/**
+ * The template for displaying all pages
+ *
+ * This is the template that displays all pages by default.
+ * Please note that this is the WordPress construct of pages
+ * and that other 'pages' on your WordPress site may use a
+ * different template.
+ *
+ * @link https://codex.wordpress.org/Template_Hierarchy
+ *
+ * @package Bulmapress
+ */
 
-	<main role="main" aria-label="Content">
-		<!-- section -->
-		<section>
+get_header(); ?>
 
-			<h1><?php the_title(); ?></h1>
-
-		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
-
-			<!-- article -->
-			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-				<?php the_content(); ?>
-
-
-				<?php edit_post_link(); ?>
-
-			</article>
-			<!-- /article -->
-
+<div id="primary" class="content-area">
+	<main id="main" class="site-main" role="main">
+		<?php while ( have_posts() ) : the_post(); ?>
+			<?php get_template_part( 'template-parts/content' ); ?>
+			<?php bulmapress_get_comments(); ?>
 		<?php endwhile; ?>
+	</main><!-- #main -->
+</div><!-- #primary -->
 
-		<?php else: ?>
-
-			<!-- article -->
-			<article>
-
-				<h2><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h2>
-
-			</article>
-			<!-- /article -->
-
-		<?php endif; ?>
-
-		</section>
-		<!-- /section -->
-	</main>
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>
